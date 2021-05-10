@@ -1,19 +1,20 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+
 
 function App() {
 	return (
-		<div className="app">
+		<div className="App">
 			<Router>
 				<Navbar />
 				<Switch>
 					<Route path="/" exact component={Home} />
-					<Route path="/about" exact component={About} />
+					<Route path="home" exact component={Home} />
+					<Route path="/portfolio" exact component={Portfolio} />
 					<Route path="/contact" exact component={Contact} />
 				</Switch>
 			</Router>
