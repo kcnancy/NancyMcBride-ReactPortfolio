@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Footer from "./components/Footer";
 import Contact from './pages/Contact';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 	return (
