@@ -1,10 +1,13 @@
 import React from "react";
 import { Container, Row, Card, Col, Image } from "react-bootstrap";
+import background from '../assets/2019stjohn.png';
 
 const Home = () => {
   return (
     <>
       <Container>
+      <Image
+      src={background}/>
         <Row>
           <Col md={10}>
             <Card>

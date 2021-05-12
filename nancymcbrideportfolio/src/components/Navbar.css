@@ -1,7 +1,7 @@
 .navbar {
 	height: 80px;
 	width: 100%;
-	background: rgb(0, 4, 255);
+	background: blue;
 	color: white;
 	display: flex;
 	justify-content: space-between;
@@ -20,6 +20,8 @@
 	grid-template-columns: repeat(4, auto);
 	grid-gap: 20px;
 	list-style: none;
+	color: white;
+
 }
 
 .nav-link {
@@ -52,10 +54,12 @@
 		top: 80px;
 		left: -100%;
 		transition: 0.5s all;
+		color: white;
+
 	}
 
 	.nav-links.active {
-		background: cyan;
+		background: blue;
 		left: 0;
 	}
 
