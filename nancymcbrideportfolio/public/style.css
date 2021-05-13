@@ -12,5 +12,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0 0 100px;
-    padding-bottom: 10%
+    padding-bottom: 10%;
+    border:4rem;
+    position: center;
+}
+col {
+    position: center;
+}
+Card.Body{
+    position: center; 
 }

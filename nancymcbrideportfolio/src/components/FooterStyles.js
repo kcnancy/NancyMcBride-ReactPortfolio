@@ -3,12 +3,11 @@ import 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Box = styled.div`
-padding: 80px 60px;
-
+padding: 100px 60px;
 position: absolute;
 bottom: 0;
 width: 100%;
-height: 80px;
+height: 100px;
 
 
 @media (max-width: 100%) {
@@ -21,27 +20,27 @@ export const Container = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	max-width: 100%;
+	height: 125px;
 	margin: 0 auto;
 	background: blue;
 `;
 
 export const Column = styled.div`
 display: flex;
-
 flex-direction: column;
 text-align: center;
 `;
 
 export const Row = styled.div`
 display: grid;
-
+text-align: center;
 grid-template-columns: repeat(auto-fill,
 						minmax(175px, 1fr));
 grid-gap: 5px;
 
 @media (max-width: 100%) {
 	grid-template-columns: repeat(auto-fill,
-						minmax(175px, 1fr));
+						minmax(200px, 5fr));
 }
 `;
 
@@ -49,7 +48,7 @@ export const FooterLink = styled.a`
 color: white;
 position: center;
 bottom: 0px;
-height: 30px;
+height: 20px;
 font-size: 18px;
 text-decoration: none;
 &:hover {
@@ -58,9 +57,9 @@ text-decoration: none;
 }
 `;
 
-// export const Heading = styled.p`
-// font-size: 24px;
-// color: #fff;
-// margin-bottom: 0px;
-// font-weight: bold;
-// `;
+export const Heading = styled.p`
+font-size: 17px;
+color: #fff;
+margin-bottom: 15px;
+font-weight: bold;
+`;

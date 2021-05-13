@@ -9,7 +9,7 @@ const Home = () => {
       <Image
       src={background}/>
         <Row>
-          <Col md={10}>
+          <Col md={9}>
             <Card>
               <Card.Body>
                 <Image
