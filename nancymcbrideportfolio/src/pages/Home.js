@@ -1,23 +1,24 @@
 import React from "react";
-import { Container, Row, Card, Col, Image } from "react-bootstrap";
-import background from '../assets/2019stjohn.png';
-
+import { Container, Row, Card, Col, Image, Button } from "react-bootstrap";
+import "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@fortawesome/fontawesome-svg-core";
+import  "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   return (
     <>
       <Container>
-      <Image
-      src={background}/>
         <Row>
-          <Col md={9}>
-            <Card>
+          <Col md={10}>
+            <Card className="mb-3 border-info">
               <Card.Body>
                 <Image
                   alt="profile"
                   height="200"
                   width="150"
-                  className="text=center img-fluid mx-auto d-block border-secondary"
+                  className="text=center img-fluid mx-auto"
                   src="/images/nancypic2.jpg"
+                  rounded
                 />
 
                 <Card.Title>About Me</Card.Title>
@@ -45,6 +46,10 @@ const Home = () => {
                   </p>
                 </Card.Text>
               </Card.Body>
+              <a href="https://docs.google.com/document/d/e/2PACX-1vQHO8eA4djybb3h0nQsCla1GAu80Q0V9jwChjB87xXNNBs93lt6j4-pE-lj9EnSKhe0g3kmm8ADbY4i/pub" target="_blank" rel="noreferrer">
+               <Button variant="primary" size="lg" block border-radius="85%">
+              Resume
+              </Button></a>
             </Card>
           </Col>
         </Row>

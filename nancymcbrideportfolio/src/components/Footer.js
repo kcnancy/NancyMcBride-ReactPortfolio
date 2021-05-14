@@ -10,21 +10,14 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
-//import ReactDOM from 'react-dom'
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fab);
 
 const Footer = () => {
-  // const footerStyle = {
-  // 	position: 'fixed',
-  // 	bottom: '0',
-  // 	width: '100%',
-  // 	height: '80px',
 
-  // }
   return (
-    //<div style={footerStyle} className='fixed-bottom'>
+
 
     <Container>
       <Row>

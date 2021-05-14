@@ -6,19 +6,7 @@ html {
 .center {
     align-items: center;
 }
-body {
-    background-image: url('images/2019stjohn.png') ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0 0 100px;
-    padding-bottom: 10%;
-    border:4rem;
-    position: center;
-}
+
 col {
     position: center;
-}
-Card.Body{
-    position: center; 
 }

@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+import { Container } from "react-bootstrap";
 
-const About = () => {
-    return (
-        <div>
-            About Page
-        </div>
+const Portfolio = () => {
+    return(
+<>
+<h1>Portfolio</h1>
+<Container>
+    
+</Container>
+</>
     )
 }
 
-export default About;
+export default Portfolio;

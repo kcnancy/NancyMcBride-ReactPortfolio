@@ -1,30 +1,60 @@
-import React from 'react';
-import {Container, Form,Card, Button} from 'react-bootstrap'
-const Contact = () => {
-    return (
-        <>
+/* eslint-disable no-unreachable */
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { Container, Row, Card, Col, Button, Form } from "react-bootstrap";
 
-         <Container >
-             <Card className=" mb-3 border-info" style={{backgroundColor: "light blue"}}>
-                 <Card.Body>
-            <h2 className="text-left text-dark">Contact<i class="far fa-address-card m-2 p-2 text-info"></i></h2>
-            <hr/>
-         <Form>
-  <Form.Group controlId="formGroupEmail" >
-    <Form.Label >Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" className="border-info" />
-  </Form.Group>
-  <Form.Group controlId="formGroupMessage">
-  <Form.Label>Message</Form.Label>
-    <Form.Control as="textarea" placeholder="Message" className="border-info" />
-    </Form.Group>
-<Button variant="dark" className="px-5 mt-2 mb-3" type="submit" >Submit</Button>
- </Form>
-</Card.Body>
-</Card>
-</Container>
-</>
-)
+function Contact() {
+  const [state, handleSubmit] = useForm("xoqpbnpr");
+  if (state.succeeded)  {
+    return <p>Thanks for joining!</p>;
+}
+  return (
+    <Container className="d-flex vh-100">
+      <Row className="m-auto align-self-center">
+        <Col>
+          <Card
+            className=" mb-3 border-info"
+            style={{ color: "blue", width: "30rem" }}
+          >
+            <Card.Body>
+              <h2 className text="center" color="blue">
+                Contact Me
+              </h2>
+              <hr />
+              <Form onSubmit={handleSubmit}>
+                <Form.Group controlId="formGroupEmail">
+                  <Form.Label htmlFor="email">Email Address</Form.Label>
+                  <Form.Control type="email" name="email" />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
+                </Form.Group>
+                <Form.Group controlId="formGroupMessage">
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control
+                    textarea
+                    id="message"
+                    name="message"
+                    type="text"
+                  />
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
+                </Form.Group>
+                <Button type="submit" disabled={state.submitting}>
+                  Submit
+                </Button>
+              </Form>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
+  );
 }
 
-export default Contact
+export default Contact;
