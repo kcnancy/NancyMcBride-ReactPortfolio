@@ -2,6 +2,7 @@
   "name": "nancymcbrideportfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kcnancy.github.io/NancyMcBride-ReactPortfolio",
   "dependencies": {
     "@formspree/react": "^2.2.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -29,7 +30,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "homepage": "https://kcnancy.github.io/NancyMcBride-ReactPortfolio",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
