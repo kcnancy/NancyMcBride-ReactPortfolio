@@ -4,6 +4,7 @@ import "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-svg-core";
 import  "@fortawesome/free-solid-svg-icons";
+
 const Home = () => {
   return (
     <>
@@ -17,7 +18,7 @@ const Home = () => {
                   height="200"
                   width="150"
                   className="text=center img-fluid mx-auto"
-                  src="/images/nancypic2.jpg"
+                  src={"images/nancypic2.jpg"}
                   rounded
                 />
 
