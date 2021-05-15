@@ -1,21 +1,28 @@
 /* eslint-disable no-unreachable */
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { Container, Row, Card, Col, Button, Form } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Card,
+  Col,
+  Button,
+  Form,
+  } from "react-bootstrap";
 
+ 
 function Contact() {
   const [state, handleSubmit] = useForm("xoqpbnpr");
-  if (state.succeeded)  {
+  if (state.succeeded) {
     return <p>Thanks for joining!</p>;
-}
+  }
   return (
-    <Container className="d-flex vh-100">
-      <Row className="m-auto align-self-center">
-        <Col>
+    <Container className="vh-100">
+      <Col md={12}>
+        <Row className="h100 justify-content-center align-items-center">
           <Card
             className=" mb-3 border-info"
-            style={{ color: "blue", width: "30rem" }}
-          >
+            style={{ color: "blue", width: "50rem" }}>
             <Card.Body>
               <h2 className text="center" color="blue">
                 Contact Me
@@ -51,8 +58,9 @@ function Contact() {
               </Form>
             </Card.Body>
           </Card>
-        </Col>
-      </Row>
+        </Row>
+      </Col>
+
     </Container>
   );
 }
