@@ -23,9 +23,12 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "homepage": "https://kcnancy.github.io/my-app",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,4 +49,5 @@
       "last 1 safari version"
     ]
   }
+  
 }

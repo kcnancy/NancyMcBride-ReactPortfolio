@@ -7,9 +7,9 @@ import  "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   return (
     <>
-      <Container>
+      <Container className="d-flex vh-75">
         <Row>
-          <Col md={10}>
+          <Col md={12}>
             <Card className="mb-3 border-info">
               <Card.Body>
                 <Image

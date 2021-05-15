@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "@fortawesome/react-fontawesome";
 
 export const Box = styled.div`
 padding: 100px 60px;
@@ -29,6 +30,8 @@ export const Column = styled.div`
 display: flex;
 flex-direction: column;
 text-align: center;
+margin-left: 10;
+justify-content: center;
 `;
 
 export const Row = styled.div`
