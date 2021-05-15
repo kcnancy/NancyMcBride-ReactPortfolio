@@ -39,7 +39,7 @@ const Footer = () => {
         <Column>
           <Heading>GitHub</Heading>
           <FooterLink href="https://github.com/kcnancy" target="_blank">
-            <span style={{ marginLeft: "6px", color: "white"}}>
+            <span style={{ marginLeft: "6px",}}>
               <i className="fab fa-github"></i>
             </span>
           </FooterLink>
@@ -48,7 +48,7 @@ const Footer = () => {
         <Column>
           <Heading>Facebook</Heading>
           <FooterLink href="https://www.facebook.com/navigatingwithnancy" target="_blank">
-            <span style={{ marginLeft: "6px"}}>
+            <span style={{ marginLeft: "6px",}}>
               <i className="fab fa-facebook"></i>
             </span>
           </FooterLink>
