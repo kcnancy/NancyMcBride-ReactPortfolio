@@ -11,7 +11,7 @@
 }
 
 .nav-logo {
-	text-decoration: none;
+	text-decoration-line: none;
 	color: blue;
 	font-weight: 700;
 	background-color: white;
@@ -26,6 +26,7 @@
 	grid-gap: 20px;
 	list-style: none;
 	color: white;
+	text-decoration: none;
 
 }
 
@@ -37,6 +38,7 @@
 
 .nav-link:hover {
 	color: red;
+	text-decoration: none;
 }
 
 .nav-icon {
@@ -61,6 +63,8 @@
 		left: -100%;
 		transition: 0.5s all;
 		color: white;
+		text-decoration: none;
+
 
 	}
 

@@ -18,7 +18,7 @@ const Navbar = () => {
 	return (
 		<nav className="navbar">
 			<Link to="/" className="nav-logo">
-			<img src={logo} alt='logo' style={{ width:'80px'}}/>
+			<img src={logo} alt='logo' style={{textDecorationLine:'none', width:'80px'}}/>
 				Nancy McBride
 			</Link>
 
