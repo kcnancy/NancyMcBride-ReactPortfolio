@@ -30,18 +30,18 @@ const Navbar = () => {
 
 			<ul className={open ? 'nav-links active' : 'nav-links'}>
 				<li className="nav-item">
-					<Link to="/" className="nav-link text-white"
+					<Link to="/" className="nav-link"
 			onClick={closeMenu}>
 						Home
 					</Link>
 				</li>
 				<li className="nav-item">
-					<Link to="/portfolio" className="nav-link text-white" onClick={closeMenu}>
+					<Link to="/portfolio" className="nav-link" onClick={closeMenu}>
 						Portfolio
 					</Link>
 				</li>
 				<li className="nav-item">
-					<Link to="/contact" className="nav-link text-white" onClick={closeMenu}>
+					<Link to="/contact" className="nav-link" onClick={closeMenu}>
 						Contact
 					</Link>
 				</li>

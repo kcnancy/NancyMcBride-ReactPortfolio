@@ -3,33 +3,34 @@ import Logo from "../assets/Navigating-with-Nancy-Final.png";
 import "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/react-fontawesome";
-import {
-  Container,
-  Row,
-  Column,
-  FooterLink,
-  Heading,
-} from "./FooterStyles";
+import { Container, Row, Column, FooterLink, Heading } from "./FooterStyles";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fab);
 
 const Footer = () => {
-
   return (
-
-
     <Container>
       <Row>
         <Column>
-          <h3 style={{ color: "white", textAlign: "left", marginTop: "0px", marginLeft: "5px" }}>
+          <h3
+            style={{
+              color: "white",
+              textAlign: "left",
+              marginTop: "0px",
+              marginLeft: "5px",
+            }}
+          >
             Social Media
           </h3>
         </Column>
 
         <Column>
           <Heading>Navigating with Nancy</Heading>
-          <FooterLink href="http://www.navigatingwithnancy.com/" target="_blank">
+          <FooterLink
+            href="http://www.navigatingwithnancy.com/"
+            target="_blank"
+          >
             <span style={{ marginLeft: "6px" }}>
               <img src={Logo} alt="website logo" style={{ height: 45 }} />
             </span>
@@ -39,7 +40,7 @@ const Footer = () => {
         <Column>
           <Heading>GitHub</Heading>
           <FooterLink href="https://github.com/kcnancy" target="_blank">
-            <span style={{ marginLeft: "6px",}}>
+            <span style={{ marginLeft: "6px" }}>
               <i className="fab fa-github"></i>
             </span>
           </FooterLink>
@@ -47,8 +48,11 @@ const Footer = () => {
 
         <Column>
           <Heading>Facebook</Heading>
-          <FooterLink href="https://www.facebook.com/navigatingwithnancy" target="_blank">
-            <span style={{ marginLeft: "6px",}}>
+          <FooterLink
+            href="https://www.facebook.com/navigatingwithnancy"
+            target="_blank"
+          >
+            <span style={{ marginLeft: "6px" }}>
               <i className="fab fa-facebook"></i>
             </span>
           </FooterLink>
@@ -56,7 +60,10 @@ const Footer = () => {
 
         <Column>
           <Heading>Instagram</Heading>
-          <FooterLink href="https://www.instagram.com/nancy.mcbride.940/" target="_blank">
+          <FooterLink
+            href="https://www.instagram.com/nancy.mcbride.940/"
+            target="_blank"
+          >
             <span style={{ marginLeft: "6px" }}>
               <i className="fab fa-instagram"></i>
             </span>
@@ -65,7 +72,10 @@ const Footer = () => {
 
         <Column>
           <Heading>LinkedIn</Heading>
-          <FooterLink href="www.linkedin.com/in/nancy-mcbride-ks" target="_blank">
+          <FooterLink
+            href="www.linkedin.com/in/nancy-mcbride-ks"
+            target="_blank"
+          >
             <span style={{ marginLeft: "6px" }}>
               <i className="fab fa-linkedin" />
             </span>
@@ -80,11 +90,9 @@ const Footer = () => {
             </span>
           </FooterLink>
         </Column>
-
-       
       </Row>
     </Container>
-    //</div>
+
   );
 };
 export default Footer;
