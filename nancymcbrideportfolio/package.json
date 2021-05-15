@@ -28,7 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "homepage": "https://kcnancy.github.io/my-app",
+    "homepage": "https://kcnancy.github.io/NancyMcBride-ReactPortfolio",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
